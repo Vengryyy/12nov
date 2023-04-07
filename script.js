@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const deadline = new Date(2023, 11, 12);
+    const deadline = new Date(new Date().getFullYear(), 10, 12);
     let timerId = null;
     function declensionNum(num, words) {
         return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
